@@ -17,8 +17,8 @@ if youtube_link is not None:
     with st.spinner("Loading youtube data..."):
         #documentss = loader.load_data(ytlinks=youtube_link)
         loader = YoutubeTranscriptReader()
-        documents = loader.load_data(ytlinks=youtube_link)
-        #documentss = loader.load_data(ytlinks=["https://www.youtube.com/watch?v=4O1rs7mrNDo"])
+        #documents = loader.load_data(ytlinks=[youtube_link])
+        documents = loader.load_data(ytlinks=["https://www.youtube.com/watch?v=4O1rs7mrNDo"])
         st.success("Youtube data loaded successfully!")
         # Initialize the language model
         llm = HuggingFaceEndpoint(
