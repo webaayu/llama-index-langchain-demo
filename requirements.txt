@@ -1,0 +1,5 @@
+streamlit
+langchain-huggingface 
+llama-index-readers-youtube-transcript 
+llama-index-core
+llama-index
